@@ -51,7 +51,7 @@ details{color:var(--mu);font-size:.9rem;margin-top:8px}
 <p class="sub">Évaluez, simplifiez et visualisez vos expressions d'algèbre de Boole.</p>
 
 <div class="card">
-<input id="f" value="A·B + ¬A·C + B·C" spellcheck="false" autocomplete="off" aria-label="Expression booléenne">
+<input id="f" value=" A + A'B " spellcheck="false" autocomplete="off" aria-label="Expression booléenne">
 <div class="row ops" id="ops"></div>
 <div class="row chips" id="ch"></div>
 <div id="err"></div>
