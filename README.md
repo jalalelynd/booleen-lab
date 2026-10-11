@@ -43,6 +43,9 @@ code,.m{font-family:ui-monospace,Menlo,Consolas,monospace}
 .laws button{text-align:left;padding:8px 10px}.laws small{display:block;color:var(--mu);font-family:ui-monospace,monospace}
 .st{border-left:3px solid var(--ac);padding:2px 0 2px 12px;margin:14px 0}.st small,.tag small{color:var(--mu)}.tag small{margin-left:4px}td.e{background:var(--on);font-weight:700;outline:2px solid var(--ac)}summary{cursor:pointer;margin:8px 0}
 details{color:var(--mu);font-size:.9rem;margin-top:8px}
+.footer-credit{margin:18px 0 0;text-align:center;color:var(--mu);font-size:.9rem}
+.footer-credit strong{color:var(--ac);font-weight:600}
+
 </style>
 </head>
 <body>
@@ -51,7 +54,7 @@ details{color:var(--mu);font-size:.9rem;margin-top:8px}
 <p class="sub">Évaluez, simplifiez et visualisez vos expressions d'algèbre de Boole.</p>
 
 <div class="card">
-<input id="f" value=" A + A'B " spellcheck="false" autocomplete="off" aria-label="Expression booléenne">
+<input id="f" value="A + A'B " spellcheck="false" autocomplete="off" aria-label="Expression booléenne">
 <div class="row ops" id="ops"></div>
 <div class="row chips" id="ch"></div>
 <div id="err"></div>
@@ -69,7 +72,7 @@ details{color:var(--mu);font-size:.9rem;margin-top:8px}
 <div class="laws" id="laws"></div>
 </section>
 </div>
-
+<p class="footer-credit">By :  <strong>JE</strong></p>
 <script>
 const E=id=>document.getElementById(id);
 const norm=s=>s.toUpperCase().replace(/<->|<=>|⇔/g,'≡').replace(/->|=>|⇒/g,'→').replace(/[∧&*·.]/g,'&').replace(/[∨+]/g,'|').replace(/[⊕^]/g,'^').replace(/[¬~!]/g,'!');
